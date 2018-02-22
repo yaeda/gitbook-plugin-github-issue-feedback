@@ -25,6 +25,6 @@ BugReporter.prototype.report = function() {
     var url = this.github_issue_point
         + "?title=" + encodeURIComponent(this.github_issue_title)
         + "&body=" + encodeURIComponent(this.github_issue_body);
-    location.href = url;
+    window.open(url, "_blank");
 };
 module.exports = BugReporter;
